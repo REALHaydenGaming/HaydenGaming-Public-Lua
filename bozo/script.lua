@@ -10,7 +10,7 @@ function onBeatHit()
          doTweenAlpha('fuckyouhud', 'camHUD', 0, 0.5, 'quadOut')
     end
     if curBeat == 64 then
-        ballSackReal = true
+	ballSackReal = true
         cancelTween('dad?')
         doTweenAlpha('fuckyouhud', 'camHUD', 1, 0.5, 'quadOut')
         doTweenZoom('fatherMoment', 'camGame', 0.8, 1, 'cubeOut')
@@ -25,12 +25,19 @@ function onBeatHit()
 								noteTweenX('wtfMain6', 1, 525, 2.3, 'expoOut')
 								noteTweenX('wtfMain7', 2, 625, 2.3, 'expoOut')
 								noteTweenX('wtfMain8', 3, 725, 2.3, 'expoOut')
-		
-								noteTweenY('yoPeak1', 0, defaultPlayerStrumsY0 + 320, 2.3, 'expoOut')
-								noteTweenY('yoPeak2', 0, defaultPlayerStrumsY1 + 320, 2.3, 'expoOut')
-								noteTweenY('yoPeak3', 0, defaultPlayerStrumsY2 + 320, 2.3, 'expoOut')
-								noteTweenY('yoPeak4', 0, defaultPlayerStrumsY3 + 320, 2.3, 'expoOut')
 								
+								if downscroll then
+									noteTweenY('yoPeakDown1', 0, defaultPlayerStrumY0 - 220, 2.3, 'expoOut')
+									noteTweenY('yoPeakDown2', 1, defaultPlayerStrumY1 - 220, 2.3, 'expoOut')
+									noteTweenY('yoPeakDown3', 2, defaultPlayerStrumY2 - 220, 2.3, 'expoOut')
+									noteTweenY('yoPeakDown4', 3, defaultPlayerStrumY3 - 220, 2.3, 'expoOut')
+								end
+								if upscroll then
+									noteTweenY('yoPeakDown1', 0, defaultPlayerStrumY0 + 220, 2.3, 'expoOut')
+									noteTweenY('yoPeakDown2', 1, defaultPlayerStrumY1 + 220, 2.3, 'expoOut')
+									noteTweenY('yoPeakDown3', 2, defaultPlayerStrumY2 + 220, 2.3, 'expoOut')
+									noteTweenY('yoPeakDown4', 3, defaultPlayerStrumY3 + 220, 2.3, 'expoOut')
+								end
 								noteTweenAngle('hahaAngleGoBRRR1', 0, 360, 2.3, 'expoOut')
 								noteTweenAngle('hahaAngleGoBRRR2', 1, 360, 2.3, 'expoOut')
 								noteTweenAngle('hahaAngleGoBRRR3', 2, 360, 2.3, 'expoOut')
