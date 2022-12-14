@@ -199,6 +199,7 @@ function onCreate()
     setTextSize('dis', 20)
     setTextColor('dis', 'FFFFFF')
     addLuaText('dis',true)
+    addLuaScript("modchart.lua", false)
 end
 function onUpdate(elapsed)
 	setProperty('timeBar.color', getColorFromHex('800080'))
