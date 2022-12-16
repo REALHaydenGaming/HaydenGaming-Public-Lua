@@ -1,0 +1,4 @@
+value 1 = how long (both equals).
+value 2 = how big the health drain.
+
+do not steal the code fuckers, its ONLY for this mod.
